@@ -1,0 +1,17 @@
+# python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+
+# rust
+target/
+
+# eval artefacts
+eval-reports/*.log
+src/acct_agent/prompts/*-gepa-logs/
+
+# misc
+.DS_Store

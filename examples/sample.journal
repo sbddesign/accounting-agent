@@ -1,0 +1,465 @@
+; Sample personal ledger — USD and Bitcoin
+; Accounts follow the convention: assets, liabilities, income, expenses, equity
+
+commodity $1,000.00
+commodity 1.00000000 BTC
+
+; Market prices for BTC in USD
+P 2026-01-01 BTC $95,000
+P 2026-02-01 BTC $98,000
+P 2026-03-01 BTC $92,000
+P 2026-04-01 BTC $101,000
+P 2026-05-01 BTC $108,000
+P 2026-06-01 BTC $112,000
+P 2026-07-01 BTC $110,000
+P 2026-08-01 BTC $115,000
+
+2026-01-01 Opening balances
+    assets:bank:checking            $6,200.00
+    assets:bank:savings            $15,000.00
+    assets:bitcoin:cold-storage    0.42000000 BTC
+    liabilities:credit-card:visa   $-1,150.00
+    liabilities:loans:auto        $-14,800.00
+    liabilities:loans:mortgage   $-236,000.00
+    assets:real-estate:home       $310,000.00
+    equity:opening-balances
+
+; ---------------- January ----------------
+2026-01-02 Paycheck
+    assets:bank:checking            $3,900.00
+    income:salary
+
+2026-01-03 Kroger
+    expenses:groceries                 $142.18
+    liabilities:credit-card:visa
+
+2026-01-05 Mortgage payment
+    liabilities:loans:mortgage         $620.00
+    expenses:interest:mortgage       $1,180.00
+    assets:bank:checking
+
+2026-01-07 Auto loan payment
+    liabilities:loans:auto             $410.00
+    expenses:interest:auto              $65.00
+    assets:bank:checking
+
+2026-01-09 Shell gas
+    expenses:transportation:fuel        $52.40
+    liabilities:credit-card:visa
+
+2026-01-12 Georgia Power
+    expenses:utilities:electric        $138.75
+    assets:bank:checking
+
+2026-01-14 Chipotle
+    expenses:dining                     $14.85
+    liabilities:credit-card:visa
+
+2026-01-16 Paycheck
+    assets:bank:checking            $3,900.00
+    income:salary
+
+2026-01-17 Publix
+    expenses:groceries                 $96.44
+    liabilities:credit-card:visa
+
+2026-01-20 Credit card payment
+    liabilities:credit-card:visa     $1,300.00
+    assets:bank:checking
+
+2026-01-22 Netflix
+    expenses:subscriptions              $15.49
+    liabilities:credit-card:visa
+
+2026-01-25 Buy bitcoin
+    assets:bitcoin:exchange        0.00500000 BTC @ $96,000
+    assets:bank:checking
+
+2026-01-28 Transfer to savings
+    assets:bank:savings                $500.00
+    assets:bank:checking
+
+; ---------------- February ----------------
+2026-02-01 Paycheck
+    assets:bank:checking            $3,900.00
+    income:salary
+
+2026-02-03 Kroger
+    expenses:groceries                 $131.02
+    liabilities:credit-card:visa
+
+2026-02-05 Mortgage payment
+    liabilities:loans:mortgage         $623.00
+    expenses:interest:mortgage       $1,177.00
+    assets:bank:checking
+
+2026-02-07 Auto loan payment
+    liabilities:loans:auto             $412.00
+    expenses:interest:auto              $63.00
+    assets:bank:checking
+
+2026-02-08 Costco
+    expenses:groceries                 $210.77
+    liabilities:credit-card:visa
+
+2026-02-10 QT gas
+    expenses:transportation:fuel        $48.10
+    liabilities:credit-card:visa
+
+2026-02-12 Georgia Power
+    expenses:utilities:electric        $151.20
+    assets:bank:checking
+
+2026-02-14 Valentine's dinner
+    expenses:dining                    $128.50
+    liabilities:credit-card:visa
+
+2026-02-15 Paycheck
+    assets:bank:checking            $3,900.00
+    income:salary
+
+2026-02-20 Credit card payment
+    liabilities:credit-card:visa       $900.00
+    assets:bank:checking
+
+2026-02-22 Netflix
+    expenses:subscriptions              $15.49
+    liabilities:credit-card:visa
+
+2026-02-25 Transfer to savings
+    assets:bank:savings                $500.00
+    assets:bank:checking
+
+; ---------------- March ----------------
+2026-03-01 Paycheck
+    assets:bank:checking            $3,900.00
+    income:salary
+
+2026-03-03 Kroger
+    expenses:groceries                 $155.30
+    liabilities:credit-card:visa
+
+2026-03-05 Mortgage payment
+    liabilities:loans:mortgage         $626.00
+    expenses:interest:mortgage       $1,174.00
+    assets:bank:checking
+
+2026-03-07 Auto loan payment
+    liabilities:loans:auto             $414.00
+    expenses:interest:auto              $61.00
+    assets:bank:checking
+
+2026-03-09 Shell gas
+    expenses:transportation:fuel        $55.90
+    liabilities:credit-card:visa
+
+2026-03-11 Georgia Power
+    expenses:utilities:electric        $122.40
+    assets:bank:checking
+
+2026-03-13 Waffle House
+    expenses:dining                     $22.10
+    liabilities:credit-card:visa
+
+2026-03-15 Paycheck
+    assets:bank:checking            $3,900.00
+    income:salary
+
+2026-03-18 Amazon
+    expenses:household                  $67.99
+    liabilities:credit-card:visa
+
+2026-03-20 Credit card payment
+    liabilities:credit-card:visa       $700.00
+    assets:bank:checking
+
+2026-03-22 Netflix
+    expenses:subscriptions              $15.49
+    liabilities:credit-card:visa
+
+2026-03-25 Buy bitcoin
+    assets:bitcoin:exchange        0.01000000 BTC @ $93,000
+    assets:bank:checking
+
+2026-03-28 Transfer to savings
+    assets:bank:savings                $500.00
+    assets:bank:checking
+
+; ---------------- April ----------------
+2026-04-01 Paycheck
+    assets:bank:checking            $3,900.00
+    income:salary
+
+2026-04-03 Kroger
+    expenses:groceries                 $139.88
+    liabilities:credit-card:visa
+
+2026-04-05 Mortgage payment
+    liabilities:loans:mortgage         $629.00
+    expenses:interest:mortgage       $1,171.00
+    assets:bank:checking
+
+2026-04-07 Auto loan payment
+    liabilities:loans:auto             $416.00
+    expenses:interest:auto              $59.00
+    assets:bank:checking
+
+2026-04-09 QT gas
+    expenses:transportation:fuel        $50.25
+    liabilities:credit-card:visa
+
+2026-04-11 Georgia Power
+    expenses:utilities:electric        $109.60
+    assets:bank:checking
+
+2026-04-13 Tax refund
+    assets:bank:checking              $1,250.00
+    income:tax-refund
+
+2026-04-15 Paycheck
+    assets:bank:checking            $3,900.00
+    income:salary
+
+2026-04-17 Publix
+    expenses:groceries                 $88.12
+    liabilities:credit-card:visa
+
+2026-04-19 Movie night
+    expenses:entertainment              $34.00
+    liabilities:credit-card:visa
+
+2026-04-20 Credit card payment
+    liabilities:credit-card:visa       $650.00
+    assets:bank:checking
+
+2026-04-22 Netflix
+    expenses:subscriptions              $15.49
+    liabilities:credit-card:visa
+
+2026-04-28 Transfer to savings
+    assets:bank:savings                $500.00
+    assets:bank:checking
+
+; ---------------- May ----------------
+2026-05-01 Paycheck
+    assets:bank:checking            $3,900.00
+    income:salary
+
+2026-05-03 Kroger
+    expenses:groceries                 $147.60
+    liabilities:credit-card:visa
+
+2026-05-05 Mortgage payment
+    liabilities:loans:mortgage         $632.00
+    expenses:interest:mortgage       $1,168.00
+    assets:bank:checking
+
+2026-05-07 Auto loan payment
+    liabilities:loans:auto             $418.00
+    expenses:interest:auto              $57.00
+    assets:bank:checking
+
+2026-05-09 Shell gas
+    expenses:transportation:fuel        $58.30
+    liabilities:credit-card:visa
+
+2026-05-11 Georgia Power
+    expenses:utilities:electric        $131.90
+    assets:bank:checking
+
+2026-05-14 Home Depot
+    expenses:household                 $212.45
+    liabilities:credit-card:visa
+
+2026-05-15 Paycheck
+    assets:bank:checking            $3,900.00
+    income:salary
+
+2026-05-16 Sell bitcoin
+    assets:bank:checking              $1,080.00
+    assets:bitcoin:exchange       -0.01000000 BTC @ $108,000
+
+2026-05-18 Chipotle
+    expenses:dining                     $16.20
+    liabilities:credit-card:visa
+
+2026-05-20 Credit card payment
+    liabilities:credit-card:visa       $800.00
+    assets:bank:checking
+
+2026-05-22 Netflix
+    expenses:subscriptions              $15.49
+    liabilities:credit-card:visa
+
+2026-05-28 Transfer to savings
+    assets:bank:savings                $500.00
+    assets:bank:checking
+
+; ---------------- June ----------------
+2026-06-01 Paycheck
+    assets:bank:checking            $3,900.00
+    income:salary
+
+2026-06-03 Kroger
+    expenses:groceries                 $160.14
+    liabilities:credit-card:visa
+
+2026-06-05 Mortgage payment
+    liabilities:loans:mortgage         $635.00
+    expenses:interest:mortgage       $1,165.00
+    assets:bank:checking
+
+2026-06-07 Auto loan payment
+    liabilities:loans:auto             $420.00
+    expenses:interest:auto              $55.00
+    assets:bank:checking
+
+2026-06-09 QT gas
+    expenses:transportation:fuel        $61.75
+    liabilities:credit-card:visa
+
+2026-06-11 Georgia Power
+    expenses:utilities:electric        $178.30
+    assets:bank:checking
+
+2026-06-13 Delta Airlines
+    expenses:travel                    $486.00
+    liabilities:credit-card:visa
+
+2026-06-15 Paycheck
+    assets:bank:checking            $3,900.00
+    income:salary
+
+2026-06-18 Publix
+    expenses:groceries                 $102.33
+    liabilities:credit-card:visa
+
+2026-06-20 Credit card payment
+    liabilities:credit-card:visa     $1,100.00
+    assets:bank:checking
+
+2026-06-22 Netflix
+    expenses:subscriptions              $15.49
+    liabilities:credit-card:visa
+
+2026-06-25 Buy bitcoin
+    assets:bitcoin:exchange        0.00800000 BTC @ $112,500
+    assets:bank:checking
+
+2026-06-28 Transfer to savings
+    assets:bank:savings                $500.00
+    assets:bank:checking
+
+; ---------------- July ----------------
+2026-07-01 Paycheck
+    assets:bank:checking            $3,900.00
+    income:salary
+
+2026-07-03 Kroger
+    expenses:groceries                 $151.72
+    liabilities:credit-card:visa
+
+2026-07-05 Mortgage payment
+    liabilities:loans:mortgage         $638.00
+    expenses:interest:mortgage       $1,162.00
+    assets:bank:checking
+
+2026-07-06 Whole Foods
+    expenses:groceries                 $188.40
+    liabilities:credit-card:visa
+
+2026-07-07 Auto loan payment
+    liabilities:loans:auto             $422.00
+    expenses:interest:auto              $53.00
+    assets:bank:checking
+
+2026-07-09 Shell gas
+    expenses:transportation:fuel        $57.15
+    liabilities:credit-card:visa
+
+2026-07-11 Georgia Power
+    expenses:utilities:electric        $196.80
+    assets:bank:checking
+
+2026-07-12 Best Buy
+    expenses:electronics               $349.99
+    liabilities:credit-card:visa
+
+2026-07-14 Chipotle
+    expenses:dining                     $15.40
+    liabilities:credit-card:visa
+
+2026-07-15 Paycheck
+    assets:bank:checking            $3,900.00
+    income:salary
+
+2026-07-17 Publix
+    expenses:groceries                 $91.06
+    liabilities:credit-card:visa
+
+2026-07-18 Cheesecake Factory
+    expenses:dining                     $84.20
+    liabilities:credit-card:visa
+
+2026-07-19 UNKNOWN MERCHANT XJ-9921
+    expenses:dining                  $1,842.00
+    liabilities:credit-card:visa
+
+2026-07-20 Credit card payment
+    liabilities:credit-card:visa       $900.00
+    assets:bank:checking
+
+2026-07-22 Netflix
+    expenses:subscriptions              $15.49
+    liabilities:credit-card:visa
+
+2026-07-24 Movie night
+    expenses:entertainment              $28.00
+    liabilities:credit-card:visa
+
+2026-07-28 Transfer to savings
+    assets:bank:savings                $500.00
+    assets:bank:checking
+
+; ---------------- August ----------------
+2026-08-01 Paycheck
+    assets:bank:checking            $3,900.00
+    income:salary
+
+2026-08-03 Kroger
+    expenses:groceries                 $144.90
+    liabilities:credit-card:visa
+
+2026-08-05 Mortgage payment
+    liabilities:loans:mortgage         $641.00
+    expenses:interest:mortgage       $1,159.00
+    assets:bank:checking
+
+2026-08-07 Auto loan payment
+    liabilities:loans:auto             $424.00
+    expenses:interest:auto              $51.00
+    assets:bank:checking
+
+2026-08-08 Netflix
+    expenses:subscriptions              $15.49
+    liabilities:credit-card:visa
+
+2026-08-08 Netflix
+    expenses:subscriptions              $15.49
+    liabilities:credit-card:visa
+
+2026-08-09 QT gas
+    expenses:transportation:fuel        $54.60
+    liabilities:credit-card:visa
+
+2026-08-11 Georgia Power
+    expenses:utilities:electric        $189.10
+    assets:bank:checking
+
+2026-08-14 Chipotle
+    expenses:dining                     $15.95
+    liabilities:credit-card:visa
+
+2026-08-15 Paycheck
+    assets:bank:checking            $3,900.00
+    income:salary

@@ -1,0 +1,24 @@
+[project]
+name = "acct-agent"
+version = "0.1.0"
+description = "Locally hosted accounting agent (DSPy + GEPA + hledger)"
+readme = "README.md"
+authors = [
+    { name = "Stephen DeLorme", email = "stephen@d.elor.me" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "dspy>=3.3.0",
+]
+
+[project.scripts]
+acct-agent = "acct_agent.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
