@@ -15,3 +15,6 @@ src/acct_agent/prompts/*-gepa-logs/
 
 # misc
 .DS_Store
+eval-reports/*.sh
+eval-reports/*.done
+eval-reports/reported.txt

@@ -30,6 +30,10 @@ class ModelConfig:
     temperature: float = float(os.environ.get("ACCT_AGENT_TEMPERATURE", "0.0"))
     max_tokens: int = int(os.environ.get("ACCT_AGENT_MAX_TOKENS", "4000"))
     num_ctx: int = int(os.environ.get("ACCT_AGENT_NUM_CTX", "16384"))
+    # Ollama "thinking" models (Gemma 4, Qwen 3, ...) emit hidden reasoning tokens on every
+    # call by default — ~10x more generated tokens for a tool call. The ReAct loop already
+    # has an explicit thought field, so thinking is off unless ACCT_AGENT_THINK=1.
+    think: bool = os.environ.get("ACCT_AGENT_THINK", "0").lower() in ("1", "true", "yes")
 
     @property
     def lm_name(self) -> str:
@@ -53,6 +57,7 @@ def make_lm(cfg: ModelConfig | None = None) -> dspy.LM:
         kwargs["api_base"] = cfg.api_base or DEFAULT_OLLAMA_URL
         kwargs["api_key"] = cfg.api_key or ""
         kwargs["num_ctx"] = cfg.num_ctx
+        kwargs["think"] = cfg.think
     else:
         if cfg.api_base:
             kwargs["api_base"] = cfg.api_base
