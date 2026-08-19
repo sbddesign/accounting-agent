@@ -136,6 +136,14 @@ Notes:
 | seed prompt, all 61 cases             | 98.7% | 60/61   |
 | GEPA candidate 2, validation (19)     | 100%  | 19/19   |
 | GEPA candidate 2, held-out test (18)  | 96.2% | 17/18   |
+| `gemma4:e4b-it-qat`, seed, all 61     | 95.1% | 54/61   |
+| `gemma4:e2b-it-qat`, seed, all 61     | 95.8% | 55/61   |
+
+Speed on an M1 Pro (16 GB), warm, thinking disabled: `12b` ≈ 45–55 s per
+question (gen 14 tok/s), `e4b-it-qat` ≈ 20 s (43 tok/s), `e2b-it-qat` ≈ 10–16 s
+(75 tok/s). The small models' misses are mostly not quoting the supporting
+figures and one percentage misread — the kind of thing a GEPA round on that
+model is for (`ACCT_AGENT_MODEL=gemma4:e4b-it-qat acct-agent optimize`).
 
 The GEPA rewrite mainly added explicit *verbatim-numbers* and *completeness*
 rules (list every item a tool returns) and a rewritten answer-extraction

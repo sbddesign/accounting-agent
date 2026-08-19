@@ -1,0 +1,804 @@
+{
+  "model": "ollama_chat/gemma4:e4b-it-qat",
+  "split": "all",
+  "average": 0.9505737704918032,
+  "results": [
+    {
+      "id": 0,
+      "split": "train",
+      "question": "What is my total net worth?",
+      "answer": "Your total net worth is $174,581.60.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "net_worth",
+        "finish"
+      ],
+      "seconds": 22.1
+    },
+    {
+      "id": 1,
+      "split": "val",
+      "question": "What's my equity right now?",
+      "answer": "Your current equity, or net worth, is $174,581.60.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "net_worth",
+        "finish"
+      ],
+      "seconds": 11.6
+    },
+    {
+      "id": 2,
+      "split": "test",
+      "question": "How much am I worth in total, assets minus debts?",
+      "answer": "Your total net worth, calculated as assets minus liabilities, is $174,581.60.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "net_worth",
+        "finish"
+      ],
+      "seconds": 11.8
+    },
+    {
+      "id": 3,
+      "split": "train",
+      "question": "What are my total assets?",
+      "answer": "Your total assets are $417,646.95.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "net_worth",
+        "finish"
+      ],
+      "seconds": 11.0
+    },
+    {
+      "id": 4,
+      "split": "train",
+      "question": "What is my current debt?",
+      "answer": "Your current total debt is $243,065.35, which includes $645.35 on a Visa credit card, $11,464.00 on an auto loan, and $230,956.00 on a mortgage.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "total_debt",
+        "finish"
+      ],
+      "seconds": 11.0
+    },
+    {
+      "id": 5,
+      "split": "val",
+      "question": "How much do I owe in total across all my loans and cards?",
+      "answer": "You owe a total of $243,065.35 across all your loans and cards.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "total_debt",
+        "finish"
+      ],
+      "seconds": 11.4
+    },
+    {
+      "id": 6,
+      "split": "train",
+      "question": "How much is left on my mortgage?",
+      "answer": "The remaining balance on your mortgage is $230,956.00.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "total_debt",
+        "finish"
+      ],
+      "seconds": 10.5
+    },
+    {
+      "id": 7,
+      "split": "test",
+      "question": "What's the balance on my auto loan?",
+      "answer": "The balance on your auto loan is $11,464.00.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "total_debt",
+        "finish"
+      ],
+      "seconds": 10.8
+    },
+    {
+      "id": 8,
+      "split": "val",
+      "question": "How much do I owe on my credit card?",
+      "answer": "You owe $645.35 on your credit card.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "total_debt",
+        "finish"
+      ],
+      "seconds": 10.2
+    },
+    {
+      "id": 9,
+      "split": "train",
+      "question": "How much Bitcoin do I have?",
+      "answer": "You currently hold a total of 0.43300000 BTC.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "bitcoin_holdings",
+        "finish"
+      ],
+      "seconds": 9.7
+    },
+    {
+      "id": 10,
+      "split": "val",
+      "question": "What is my BTC worth in dollars right now?",
+      "answer": "Your total Bitcoin holdings are currently worth $49,795.00.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "bitcoin_holdings",
+        "finish"
+      ],
+      "seconds": 10.2
+    },
+    {
+      "id": 11,
+      "split": "test",
+      "question": "How much bitcoin is in cold storage?",
+      "answer": "There is 0.42000000 BTC in cold storage.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "bitcoin_holdings",
+        "finish"
+      ],
+      "seconds": 10.6
+    },
+    {
+      "id": 12,
+      "split": "train",
+      "question": "What categories did I spend the most on last month?",
+      "answer": "Last month, you spent the most on dining, totaling $1,941.60, which accounted for 46% of your total spending.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "spending_by_category",
+        "finish"
+      ],
+      "seconds": 11.4
+    },
+    {
+      "id": 13,
+      "split": "val",
+      "question": "What did I spend the most on in July?",
+      "answer": "You spent the most on dining in July, totaling $1,941.60, which accounted for 46% of your total spending.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "spending_by_category",
+        "finish"
+      ],
+      "seconds": 11.5
+    },
+    {
+      "id": 14,
+      "split": "test",
+      "question": "How much did I spend in total last month?",
+      "answer": "You spent a total of $4,235.21 last month.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "spending_by_category",
+        "finish"
+      ],
+      "seconds": 11.0
+    },
+    {
+      "id": 15,
+      "split": "train",
+      "question": "Break down my spending so far this month.",
+      "answer": "Your total spending so far this month is $1,645.53. The largest expense category is interest at $1,210.00 (74%), followed by utilities at $189.10 (11%).",
+      "score": 0.8,
+      "feedback": "The answer is missing these required facts: ['144.90']. Copy the exact figures from the tool output.",
+      "tools": [
+        "spending_by_category",
+        "finish"
+      ],
+      "seconds": 12.0
+    },
+    {
+      "id": 16,
+      "split": "test",
+      "question": "What have I spent the most on this year?",
+      "answer": "You have spent the most on 'interest' this year, totaling $9,820.00, which represents 58% of your total spending.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "spending_by_category",
+        "finish"
+      ],
+      "seconds": 12.5
+    },
+    {
+      "id": 17,
+      "split": "train",
+      "question": "How much did I spend on groceries last month?",
+      "answer": "You spent $431.18 on groceries last month.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "spending_by_category",
+        "finish"
+      ],
+      "seconds": 10.7
+    },
+    {
+      "id": 18,
+      "split": "val",
+      "question": "How much have I paid in loan interest this year?",
+      "answer": "You have paid a total of $9,820.00 in loan interest this year.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "spending_by_category",
+        "finish"
+      ],
+      "seconds": 12.0
+    },
+    {
+      "id": 19,
+      "split": "test",
+      "question": "How much did I spend on dining out this year?",
+      "answer": "You have spent $2,139.20 on dining out this year.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "spending_by_category",
+        "finish"
+      ],
+      "seconds": 10.7
+    },
+    {
+      "id": 20,
+      "split": "val",
+      "question": "What was my biggest expense category in June?",
+      "answer": "Your biggest expense category in June was interest, totaling $1,220.00.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "spending_by_category",
+        "finish"
+      ],
+      "seconds": 10.1
+    },
+    {
+      "id": 21,
+      "split": "test",
+      "question": "How much have I spent on gas over the last 3 months?",
+      "answer": "You have spent $231.80 on fuel (gas) over the last 3 months.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "spending_by_category",
+        "spending_by_category",
+        "spending_by_category",
+        "finish"
+      ],
+      "seconds": 25.5
+    },
+    {
+      "id": 22,
+      "split": "train",
+      "question": "How much was my electric bill in July?",
+      "answer": "Your electric bill in July was $196.80.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "spending_by_category",
+        "finish"
+      ],
+      "seconds": 11.2
+    },
+    {
+      "id": 23,
+      "split": "train",
+      "question": "How much income did I have last month?",
+      "answer": "Your total income for last month was $7,800.00.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "income_summary",
+        "finish"
+      ],
+      "seconds": 10.4
+    },
+    {
+      "id": 24,
+      "split": "val",
+      "question": "What's my total income this year?",
+      "answer": "Your total income for this year is $63,650.00.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "income_summary",
+        "finish"
+      ],
+      "seconds": 10.3
+    },
+    {
+      "id": 25,
+      "split": "test",
+      "question": "Did I save money last month? Compare income vs expenses.",
+      "answer": "Yes, you saved money last month. Your total income was $7,800.00, and your total expenses were $4,235.21, leaving you with a net saving of $3,564.79.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "income_summary",
+        "finish"
+      ],
+      "seconds": 13.0
+    },
+    {
+      "id": 26,
+      "split": "train",
+      "question": "How much money is in my checking account?",
+      "answer": "There is $39,351.95 in your checking account.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "account_balance",
+        "finish"
+      ],
+      "seconds": 9.6
+    },
+    {
+      "id": 27,
+      "split": "val",
+      "question": "What's my savings balance?",
+      "answer": "Your savings balance is $18,500.00.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "account_balance",
+        "finish"
+      ],
+      "seconds": 9.8
+    },
+    {
+      "id": 28,
+      "split": "test",
+      "question": "How much cash do I have in the bank in total (checking plus savings)?",
+      "answer": "You have a total of $57,851.95 in cash across your checking and savings accounts.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "list_accounts",
+        "finish"
+      ],
+      "seconds": 13.8
+    },
+    {
+      "id": 29,
+      "split": "train",
+      "question": "List all my accounts.",
+      "answer": "Your accounts include the following assets: $39,351.95 in checking, $18,500.00 in savings, 0.42000000 BTC in cold storage, 0.01300000 BTC in exchange, and a home valued at $310,000.00. Your liabilities include a $645.35 credit card balance, a $11,464.00 auto loan, and a $230,956.00 mortgage.",
+      "score": 0.76,
+      "feedback": "The answer is missing these required facts: ['bitcoin', 'visa']. Copy the exact figures from the tool output.",
+      "tools": [
+        "list_accounts",
+        "finish"
+      ],
+      "seconds": 13.9
+    },
+    {
+      "id": 30,
+      "split": "val",
+      "question": "What is my house worth on the books?",
+      "answer": "Your house is valued at $310,000.00 on the books.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "net_worth",
+        "finish"
+      ],
+      "seconds": 13.8
+    },
+    {
+      "id": 31,
+      "split": "train",
+      "question": "Are there any transactions that look suspicious compared to the rest of the ledger?",
+      "answer": "Yes, there are several transactions flagged as unusual. The most suspicious is a \\$1,842.00 charge from 'UNKNOWN MERCHANT XJ-9921' on 2026-07-19, which is about 96 times the typical dining charge. Additionally, there is a possible duplicate charge of \\$15.49 from 'Netflix' on 2026-08-08, and two other charges that are somewhat high compared to the average.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "find_unusual_transactions",
+        "finish"
+      ],
+      "seconds": 13.3
+    },
+    {
+      "id": 32,
+      "split": "val",
+      "question": "Do you see anything weird or possibly fraudulent in my recent charges?",
+      "answer": "Yes, I found a few unusual transactions: there is a highly unusual charge of $1,842.00 from 'UNKNOWN MERCHANT XJ-9921' on 2026-07-19, and a possible duplicate charge of $15.49 from 'Netflix' on 2026-08-08. There were also some other somewhat high dining charges.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "find_unusual_transactions",
+        "finish"
+      ],
+      "seconds": 13.4
+    },
+    {
+      "id": 33,
+      "split": "test",
+      "question": "Was I double charged for anything?",
+      "answer": "Yes, the system flagged a possible duplicate charge of $15.49 from 'Netflix' on 2026-08-08.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "find_unusual_transactions",
+        "finish"
+      ],
+      "seconds": 12.5
+    },
+    {
+      "id": 34,
+      "split": "train",
+      "question": "How much was the Delta Airlines charge?",
+      "answer": "The Delta Airlines charge found was for $486.00.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "search_transactions",
+        "finish"
+      ],
+      "seconds": 12.1
+    },
+    {
+      "id": 35,
+      "split": "val",
+      "question": "When did I buy something at Best Buy and how much was it?",
+      "answer": "You bought something at Best Buy on 2026-07-12 for $349.99.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "search_transactions",
+        "finish"
+      ],
+      "seconds": 12.0
+    },
+    {
+      "id": 36,
+      "split": "test",
+      "question": "How many times have I been charged by Netflix?",
+      "answer": "You have been charged by Netflix 9 times.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "search_transactions",
+        "finish"
+      ],
+      "seconds": 11.2
+    },
+    {
+      "id": 37,
+      "split": "train",
+      "question": "Show me my bitcoin purchases.",
+      "answer": "Your bitcoin purchases are:\n*   2026-06-25: 0.00800000 BTC for -$900.00\n*   2026-03-25: 0.01000000 BTC for -$930.00\n*   2026-01-25: 0.00500000 BTC for -$480.00",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "search_transactions",
+        "finish"
+      ],
+      "seconds": 21.8
+    },
+    {
+      "id": 38,
+      "split": "val",
+      "question": "What was my most recent transaction?",
+      "answer": "Your most recent transaction was a Paycheck on 2026-08-15 for $3,900.00.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "recent_transactions",
+        "finish"
+      ],
+      "seconds": 10.5
+    },
+    {
+      "id": 39,
+      "split": "test",
+      "question": "How much was the Home Depot purchase in May?",
+      "answer": "The Home Depot purchase in May was for $212.45.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "search_transactions",
+        "finish"
+      ],
+      "seconds": 12.2
+    },
+    {
+      "id": 40,
+      "split": "train",
+      "question": "Record that I spent $45.20 at Trader Joe's on groceries with my visa card today.",
+      "answer": "I have recorded a transaction of $45.20 for Trader Joe's under the groceries expense category, charged to your visa card on 2026-08-18.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "add_transaction",
+        "finish"
+      ],
+      "seconds": 33.6
+    },
+    {
+      "id": 41,
+      "split": "val",
+      "question": "Add a $60 dinner at Olive Garden yesterday, paid with the visa.",
+      "answer": "I have recorded a $60.00 transaction for \"Dinner at Olive Garden\" on 2026-08-17, which was charged to your Visa credit card and categorized under dining expenses.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "add_transaction",
+        "finish"
+      ],
+      "seconds": 32.2
+    },
+    {
+      "id": 42,
+      "split": "test",
+      "question": "I moved $1,000 from checking to savings today, please log it.",
+      "answer": "I have successfully logged the transaction: $1,000.00 was transferred from checking to savings on 2026-08-18.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "add_transaction",
+        "finish"
+      ],
+      "seconds": 12.9
+    },
+    {
+      "id": 43,
+      "split": "train",
+      "question": "Log a $120 electric bill payment to Georgia Power from checking on 2026-08-16.",
+      "answer": "The $120 electric bill payment to Georgia Power from checking on 2026-08-16 has been successfully recorded.",
+      "score": 0.4,
+      "feedback": "The answer is missing these required facts: ['120.00']. Copy the exact figures from the tool output.",
+      "tools": [
+        "add_transaction",
+        "finish"
+      ],
+      "seconds": 15.0
+    },
+    {
+      "id": 44,
+      "split": "train",
+      "question": "How much interest have I paid on the mortgage versus the auto loan this year?",
+      "answer": "You have paid $9,356.00 in interest on your mortgage and $464.00 in interest on your auto loan this year.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "spending_by_category",
+        "finish"
+      ],
+      "seconds": 21.1
+    },
+    {
+      "id": 45,
+      "split": "train",
+      "question": "How much have I spent at Kroger this year in total?",
+      "answer": "You have spent a total of $1,172.74 at Kroger this year across 8 transactions.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "search_transactions",
+        "finish"
+      ],
+      "seconds": 14.5
+    },
+    {
+      "id": 46,
+      "split": "val",
+      "question": "Which month this year did I spend the most, and how much?",
+      "answer": "You spent the most in July 2026, with total expenses of $4,235.21.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "monthly_summary",
+        "finish"
+      ],
+      "seconds": 14.4
+    },
+    {
+      "id": 47,
+      "split": "test",
+      "question": "What's my average monthly spending this year?",
+      "answer": "Your average monthly spending this year is $2,110.42.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "monthly_summary",
+        "finish"
+      ],
+      "seconds": 12.9
+    },
+    {
+      "id": 48,
+      "split": "train",
+      "question": "What percentage of last month's spending was dining?",
+      "answer": "Dining accounted for 100% of last month's spending, totaling $1,941.60.",
+      "score": 0.4,
+      "feedback": "The answer is missing these required facts: ['46']. Copy the exact figures from the tool output.",
+      "tools": [
+        "spending_by_category",
+        "finish"
+      ],
+      "seconds": 11.5
+    },
+    {
+      "id": 49,
+      "split": "val",
+      "question": "How did my spending in July compare to June?",
+      "answer": "Your spending in July was $4,235.21, which was higher than your spending in June, which was $2,224.01.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "monthly_summary",
+        "finish"
+      ],
+      "seconds": 16.0
+    },
+    {
+      "id": 50,
+      "split": "test",
+      "question": "What is my debt-to-asset ratio?",
+      "answer": "Your debt-to-asset ratio is approximately 0.58.",
+      "score": 0.625,
+      "feedback": "The answer is missing these required facts: ['243,065.35', '417,646.95']. Copy the exact figures from the tool output.",
+      "tools": [
+        "total_debt",
+        "net_worth",
+        "finish"
+      ],
+      "seconds": 19.9
+    },
+    {
+      "id": 51,
+      "split": "train",
+      "question": "If I paid off the auto loan using my savings, how much savings would I have left?",
+      "answer": "If you paid off the auto loan using your savings, you would have $7,036.00 left in your savings account.",
+      "score": 0.6,
+      "feedback": "The answer is missing these required facts: ['11,464.00', '18,500.00']. Copy the exact figures from the tool output.",
+      "tools": [
+        "list_accounts",
+        "finish"
+      ],
+      "seconds": 20.6
+    },
+    {
+      "id": 52,
+      "split": "val",
+      "question": "How much bitcoin did I sell in May, and for how much?",
+      "answer": "In May, you sold 0.01000000 BTC for $1,080.00.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "search_transactions",
+        "finish"
+      ],
+      "seconds": 25.5
+    },
+    {
+      "id": 53,
+      "split": "test",
+      "question": "How much of my net worth is bitcoin, in dollars and roughly as a percentage?",
+      "answer": "Your Bitcoin holdings are worth $49,795.00, which represents approximately 28.54% of your total net worth.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "net_worth",
+        "finish"
+      ],
+      "seconds": 54.3
+    },
+    {
+      "id": 54,
+      "split": "train",
+      "question": "How much have I saved (income minus expenses) this year in total?",
+      "answer": "You have saved a total of $46,766.60 this year after subtracting your total expenses from your total income.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "income_summary",
+        "finish"
+      ],
+      "seconds": 19.2
+    },
+    {
+      "id": 55,
+      "split": "val",
+      "question": "How much did I pay for utilities in June and July combined?",
+      "answer": "You paid a combined total of $375.10 for utilities in June and July.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "spending_by_category",
+        "spending_by_category",
+        "finish"
+      ],
+      "seconds": 29.1
+    },
+    {
+      "id": 56,
+      "split": "train",
+      "question": "What is today's date?",
+      "answer": "Today's date is 2026-08-18.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "current_date",
+        "finish"
+      ],
+      "seconds": 15.3
+    },
+    {
+      "id": 57,
+      "split": "val",
+      "question": "How much did I spend on travel last month?",
+      "answer": "You spent $57.15 in the transportation category last month.",
+      "score": 0.4,
+      "feedback": "The answer should have said one of ['0', 'no', 'none', 'nothing', 'did not'] (e.g. that nothing was found).",
+      "tools": [
+        "spending_by_category",
+        "spending_by_category",
+        "finish"
+      ],
+      "seconds": 29.0
+    },
+    {
+      "id": 58,
+      "split": "train",
+      "question": "Please delete all transactions from the ledger.",
+      "answer": "I am sorry, but I do not have a function available to delete all transactions from the ledger.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "finish"
+      ],
+      "seconds": 14.3
+    },
+    {
+      "id": 59,
+      "split": "test",
+      "question": "What will bitcoin be worth next year?",
+      "answer": "I do not have the capability to predict what Bitcoin will be worth next year. I can only provide you with current financial data using my available tools.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "finish"
+      ],
+      "seconds": 11.9
+    },
+    {
+      "id": 60,
+      "split": "test",
+      "question": "How much did I spend on groceries in 2024?",
+      "answer": "There were no expenses recorded in the 'groceries' category for the year 2024.",
+      "score": 1.0,
+      "feedback": "Correct: the answer contains the right figures, used the right tool, and is concise.",
+      "tools": [
+        "spending_by_category",
+        "spending_by_category",
+        "finish"
+      ],
+      "seconds": 33.0
+    }
+  ]
+}
