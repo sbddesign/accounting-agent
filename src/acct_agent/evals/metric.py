@@ -13,7 +13,14 @@ def _norm(s: str) -> str:
 
 
 def _contains(answer: str, needle: str) -> bool:
-    return _norm(needle) in _norm(answer)
+    a, n = _norm(answer), _norm(needle)
+    if n in a:
+        return True
+    # "$1,000" is an acceptable rendering of "1,000.00"
+    if n.endswith(".00"):
+        stem = n[:-3]
+        return re.search(re.escape(stem) + r"(?![\d.,])", a) is not None
+    return False
 
 
 def _tools_called(pred) -> list[str]:
