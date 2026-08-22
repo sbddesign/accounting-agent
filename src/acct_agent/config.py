@@ -12,6 +12,12 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 import dspy
+import litellm
+
+# Keep everything local: LiteLLM's telemetry flag defaults to True. In the
+# vendored version the completion path never sends it, but pin it off so an
+# upgrade can't quietly change that.
+litellm.telemetry = False
 
 PACKAGE_DIR = Path(__file__).resolve().parent
 PROMPTS_DIR = PACKAGE_DIR / "prompts"
